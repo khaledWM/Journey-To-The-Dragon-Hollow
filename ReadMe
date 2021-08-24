@@ -1,0 +1,59 @@
+Author: Khaled Mohamed
+ID: 101076523
+
+Purpose: C++ program that simulates a confined area which is a dragon Hollow.
+         The grid is a flat area that is surrounded by trees on three sides and
+          a cave on one side.The purpose of the program is to allow to hero
+         characters to travel across the dragon hollow and claim the emerald and
+         while doing so they encounter 3 types of enemies that will try to stop them
+         from doing so by eliminating them.The heros are: Timmy tortoise and Harold the Hare,
+         the enemies are dorcs, borcs and porcs.The cave is guarded by a dragon that instantly
+         eliminates the heros if they come in contact.Only one hero is announced the winner
+         when they make it through to the other side of the hollow all without dying and claiming
+         the emerald.
+
+
+Innovation: In any game, power ups are commonly used, it allows players to have a little bit of
+            an advantage over other players,also no game is good enough unless the players are always in danger.
+            I decided to implement 3 new characters as power ups, and one character that is always moving on
+            the map and if this character comes in contact with the heros they instantly die.
+            PowerUps:
+            The power ups are scattered across the map, and they move vertically until they get to the border and then
+            reverse similar to the dragons movement but on a wider scale.When timmy or harold get the boost a message
+            will be displayed that one of the heros have received a boost.
+            1.Medic: Allows timmy or harold to receive an extra health boost of 10 when they come in contact Char: 'M'
+            2.Armour: Allows timmy or harold to receive an extra armour boost of 10 when they come in contact Char: 'A'
+            3.ExtraStrength Allows timmy or harold to receive an extra strength of 10 boost when they come in contact Char: 'E'
+            The chaser:
+                      Chaser: Fast moving character that is on the enemy side, when he comes in contact with the
+                      heros they instantly die, the chaser does not move like all the characters but he moves
+                      twice as fast horizontally so that he can catch the heros faster. Char: 'C'
+
+
+
+Files Included:
+1.Armour.h/Armour.cc
+2.Borc.h/Borc.cc
+3.Character.h/Character.cc
+4.Chaser.h/Chaser.cc
+5.Control.h/Control.cc
+6.Display.h/Display.cc
+7.Dorc.h/Dorc.cc
+8.Dragon.h/Dragon.cc
+9.ExtraStrength.h/ExtraStrength.cc
+10.Game_Control.h/Game_Control.cc
+11.Harold.h/Harold.cc
+12.Medic.h/Medic.cc
+13.Porc.h/Porc.cc
+14.random.cc
+15.Timmy.h/Timmy.cc
+16.View.h/View.cc
+17.main.cc
+
+
+Instructions:
+1. run "make final" to create the executable files and link all files together
+2. run "./final"
+3. run "valgrind ./final" to check that all memory has been deallocated
+
+
